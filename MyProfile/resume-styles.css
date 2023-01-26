@@ -2,20 +2,123 @@ body {
     margin: 0;
     display: grid;
     grid-template-columns: 40% 60%;
+    font-family: 'Source Sans Pro', sans-serif;
 }
 .grid-left {
-    border: solid red 1pt;
     grid-template-rows: 30% 20% 50%;
+    background-color: rgb(90, 90, 245);
 }
 .grid-right {
     border: solid green 1pt;
     /* max-width: 600px; */
+    background-color: rgb(236, 236, 236);
 }
-.grid-container {
-    display: grid;
-    grid-template-rows: 200px 150px 300px;
-    grid-auto-rows: 150px;
-  }
+.flexbox-container {
+    display: flex;
+    flex-direction: column;
+}
+.flexbox-item {
+    width: auto;
+    /* border: 3px solid #333;
+    background-color: blue; */
+}
+.flexbox-item-1 {
+    height: 30vh;
+    background-image: url(portraitJesus.jpg);
+    background-size: cover;
+    border-radius: 50%;
+    margin: 20px;
+    margin-bottom: 10px;
+    background-color: blue;
+}
+.flexbox-item-2 {
+    display: flex;
+    height: 20vh;
+    display: block;
+    min-width: 330px;
+}
+.flexbox-item-3 {
+    height: 50vh;
+}
+.flexbox-item-4 {
+    height: 40vh;
+    line-height: .5;
+}
+.flexbox-item-5 {
+    height: 20vh;
+    line-height: .5;
+}
+.flexbox-item-6 {
+    height: 40vh;
+    line-height: .5;
+}
+h1 {
+    font-family: "Alegreya SansSC", sans-serif;
+}
 
-  .grid-item {
-  }
+h1.name, h2.current-job {
+    display: flex;
+    box-shadow: rgb(0, 0, 0, 0.3);
+}
+h1.name {
+    font-weight: bold;
+    line-height: 10px;
+    margin-left: 30px;
+    font-size: 25px;
+    margin-top: 20px;
+    font-family: "Alegreya SansSC", sans-serif;
+}
+h2.current-job {
+    font-size: 18px;
+    margin-left: 40px;
+    line-height: 5px;
+    font-family: "Alegreya SansSC", sans-serif;
+}
+.contact {
+    margin-top: 40px;
+}
+.info {
+    margin-left: 60px;
+    line-height: .3;
+    list-style-type: circle;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+h2.skill {
+    margin-top: 30px;
+    font-size: 18px;
+    margin-left: 40px;
+    line-height: 5px;
+    font-family: "Alegreya SansSC", sans-serif;
+    margin-bottom: 30px;
+
+}
+.skills {
+    margin-left: 60px;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+header {
+    font-family: "Alegreya SansSC", sans-serif;
+    margin-top: 30px;
+    margin-left: 20px;
+    background-color: rgb(124, 124, 248);
+    padding: 12px 10px 15px 10px;
+    opacity: .6;
+    font-weight: bold;
+}
+.work-title {
+    font-weight: bold;
+    font-size: 20px;
+    margin-left: 40px;
+    margin-top: 30px;
+}
+.work-place {
+    margin-left: 70px;
+}
+.work-details {
+    margin-left: 100px;
+}
+
+i.right {
+    color: rgb(20, 20, 228);
+}

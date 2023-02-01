@@ -27,7 +27,7 @@ body {
 }
 .flexbox-item-1 {
     /* height: 30vh; */
-    background-image: url(portraitJesus.jpg);
+    background-image: url(../portraitJesus.jpg);
     background-size: center;
     background-repeat: no-repeat;
     background-position: 50% 25%;

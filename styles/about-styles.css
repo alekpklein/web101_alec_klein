@@ -1,0 +1,51 @@
+body {
+    margin: 0;
+    padding: 0;
+    /* background-color: #ddcab2; */
+    /* background: linear-gradient(to left, #ddcab2, #d8ba95); */
+    background: radial-gradient(circle, #ddc6aa, #d2a063);
+}
+.flex-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 90px;
+}
+.intro {
+    max-width: 600px;
+    position: relative;
+}
+h1, h2 {
+    font-family: 'Permanent Marker', cursive;
+
+}
+h1 {
+    font-size: 60px;
+    margin-bottom: -30px;
+    /* margin-left: 50px; */
+    color: #d4bc91;
+    text-shadow: 2px 2px 5px rgba(0,0,0,2);
+}
+h2 {
+    font-size: 40px;
+    margin-left: 50px;
+    color: #d9ad71;
+    text-shadow: 2px 2px 5px rgba(0,0,0,2);
+}
+p {
+    font-family: 'Solitreo', cursive;
+    font-size: 30px;
+    font-weight: bold;
+    width: 700px;
+}
+/* img {
+    overflow: hidden;
+    border-radius: 10px 10px 10px 10px;
+} */
+div.image {
+    background-image: url(../smallerJesus.jpg);
+    width: 384px;
+    height: 384px;
+    box-shadow: 0 0 8px 8px #e1c096 inset;
+    border-radius: 10% 10%;
+}

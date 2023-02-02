@@ -3,45 +3,49 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../styles/contact-styles.css">
   <title>Document</title>
 </head>
 <body>
   <div class="form-container">
     <form action="results.html" method="GET" enctype="multipart/form-data">
+      <div class="intro">You'd like to have a word?</div>
+      <label for="name">What's your name?</label>
       <div>
-        <label for="name">Name</label>
-        <input type="text" name="name" id="name" >
+        <input type="text" name="name" id="name" placeholder="Santa">
     </div>
+    <label for="email">And your Email?</label>
     <div>
-      <label for="email">Email</label>
-      <input type="email" name="email" id="email" required >
+      <input type="email" name="email" id="email" required placeholder="santa.clause@north.org...">
     </div>
-    <div>
-      <label for="date">Birthdate (optional)</label>
-      <input type="date" name="date" id="date" min="2019-06-10">
-    </div>
-    <div>
-      How did you hear about me?
-      <div>
+    <div class="question">How did you hear about me?</div>
+    <div class="how-container">
+      <div class="how-hear">
         <label for="Classmate">Classmate</label>
         <input type="checkbox" name="Classmate" id="Classmate">
       </div>
-      <div>
+      <div class="how-hear">
         <label for="Resume Submission">Resume Submission</label>
         <input type="checkbox" name="Resume Submission" id="Resume Submission">
       </div>
-      <div>
+      <div class="how-hear">
         <label for="Linkedin">Linkedin</label>
         <input type="checkbox" name="Linkedin" id="Linkedin">
       </div>
-      <div>
+      <div class="how-hear">
         <label for="Coding Academy Rec">Coding Academy Rec</label>
         <input type="checkbox" name="Coding Academy Rec" id="Coding Academy Rec">
       </div>
     </div>
     <div>
-      Do you wish to be contacted?
+      <textarea id="bio" name="bio" cols="30" rows="6" placeholder="What would you like to tell me?" minlength="20" maxlength="500"></textarea>
+    </div>
+    <input type="hidden" name="hidden" value="hi">
+    <div>Would you care to be contacted?</div>
+    <div>
       <div>
         <label for="male">Yes</label>
         <input type="radio" name="contact" id="male" value="male">
@@ -51,11 +55,12 @@
         <input type="radio" name="contact" id="female" value="female">
       </div>
     </div>
-    <div>
-      <textarea id="bio" name="bio" cols="30" rows="6" placeholder="Comments..." minlength="20" maxlength="500"></textarea>
+    <label for="date" class="birthday">Would you care to opt in for a Birthday Wish?</label>
+      <div>
+        <input type="date" name="date" id="date" min="2019-06-10">
+      </div>
+      <div class="btn"><button type="submit">Submit</button></div>
     </div>
-    <input type="hidden" name="hidden" value="hi">
-    <button type="submit">Submit</button>
   </form>
   </div>
   <script src="scripts.js"></script>

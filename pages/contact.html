@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../styles/contact-styles.css">
+  <title>Document</title>
+</head>
+<body>
+  <div class="form-container">
+    <form action="results.html" method="GET" enctype="multipart/form-data">
+      <div>
+        <label for="name">Name</label>
+        <input type="text" name="name" id="name" >
+    </div>
+    <div>
+      <label for="email">Email</label>
+      <input type="email" name="email" id="email" required >
+    </div>
+    <div>
+      <label for="date">Birthdate (optional)</label>
+      <input type="date" name="date" id="date" min="2019-06-10">
+    </div>
+    <div>
+      How did you hear about me?
+      <div>
+        <label for="Classmate">Classmate</label>
+        <input type="checkbox" name="Classmate" id="Classmate">
+      </div>
+      <div>
+        <label for="Resume Submission">Resume Submission</label>
+        <input type="checkbox" name="Resume Submission" id="Resume Submission">
+      </div>
+      <div>
+        <label for="Linkedin">Linkedin</label>
+        <input type="checkbox" name="Linkedin" id="Linkedin">
+      </div>
+      <div>
+        <label for="Coding Academy Rec">Coding Academy Rec</label>
+        <input type="checkbox" name="Coding Academy Rec" id="Coding Academy Rec">
+      </div>
+    </div>
+    <div>
+      Do you wish to be contacted?
+      <div>
+        <label for="male">Yes</label>
+        <input type="radio" name="contact" id="male" value="male">
+      </div>
+      <div>
+        <label for="female">No</label>
+        <input type="radio" name="contact" id="female" value="female">
+      </div>
+    </div>
+    <div>
+      <textarea id="bio" name="bio" cols="30" rows="6" placeholder="Comments..." minlength="20" maxlength="500"></textarea>
+    </div>
+    <input type="hidden" name="hidden" value="hi">
+    <button type="submit">Submit</button>
+  </form>
+  </div>
+  <script src="scripts.js"></script>
+</body>
+</html>

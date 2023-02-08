@@ -52,7 +52,7 @@ div.image {
     height: 384px;
     box-shadow: 0 0 8px 8px #e1c096 inset;
     border-radius: 10% 10%;
-    animation: appear 2s .5s ease-in;
+    animation: appear 1s .5s ease-in;
     animation-fill-mode: backwards;
 }
 @keyframes moveInLeft {

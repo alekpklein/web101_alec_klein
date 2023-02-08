@@ -25,7 +25,7 @@ h1 {
     /* margin-left: 50px; */
     color: #d4bc91;
     text-shadow: 2px 2px 5px rgba(0,0,0,2);
-    animation: moveInLeft 4s 2s ease-out;
+    animation: moveInLeft 2s 2s ease-out;
     animation-fill-mode: both;
 }
 h2 {
@@ -33,7 +33,7 @@ h2 {
     margin-left: 50px;
     color: #d9ad71;
     text-shadow: 2px 2px 5px rgba(0,0,0,2);
-    animation: moveInRight 4s 3s ease-in-out;
+    animation: moveInRight 2s 2s ease-in-out;
     animation-fill-mode: both;
 }
 p {
@@ -42,7 +42,7 @@ p {
     font-size: 30px;
     font-weight: bold;
     width: 700px;
-    animation: appear 5s 6s ease-in;
+    animation: appear 2s 3s ease-in;
     animation-fill-mode: both;
     overflow: visible;
 }
@@ -52,7 +52,7 @@ div.image {
     height: 384px;
     box-shadow: 0 0 8px 8px #e1c096 inset;
     border-radius: 10% 10%;
-    animation: appear 4s .5s ease-in;
+    animation: appear 2s .5s ease-in;
     animation-fill-mode: backwards;
 }
 @keyframes moveInLeft {
@@ -96,7 +96,7 @@ nav ul {
     list-style: none;
     margin: 0;
     padding: 0;
-    animation: appear 2s 9s ease-in;
+    animation: appear 2s 3s ease-in;
     animation-fill-mode: backwards;
 }
 nav ul li {
